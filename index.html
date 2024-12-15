@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moyin's Interactive CV</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Moyin Olusona</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#" onclick="showCoverPage()">Cover Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" onclick="revealCV(); toggleSectionContent('about')"><b>Personal Statement</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="#education" onclick="revealCV(); toggleSectionContent('education')">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" onclick="revealCV(); toggleSectionContent('experience')">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" onclick="revealCV(); toggleSectionContent('skills')">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" onclick="revealCV(); toggleSectionContent('projects')"><b>Projects</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="#interests-achievements" onclick="revealCV(); toggleSectionContent('interests-achievements')">Interests & Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" onclick="revealCV(); toggleSectionContent('contact')"><b>Contact</b></a></li>
+        <li class="nav-item"><a class="nav-link" href="files/Moyin Olusona CV int.docx" download="files/Moyin Olusona CV int.docx">Download my CV</a></li>
+     </ul>
+    </div>
+  </nav>
+
+  <div id="coverPage">
+    <div class="card cover-card">
+      <div class="card-body">
+        <h1 class="card-title">Cover Page</h1>
+        <p class="card-text">
+          Dear Ben Walsh,
+
+          I am writing to express my enthusiasm for the 'Student who gets a good grade on this CA' position at Technological University Dublin Tallaght. As a final-year BSc Computing with Software Development student at Technological University Dublin, I am eager to apply my technical skills, collaborative experience, and passion for innovation to contribute meaningfully to your team.
+          
+          During my recent placement at the Department of Social Protection, I honed my abilities in software testing, data preparation, and system analysis. Collaborating with the BOMI Testing Team, I conducted health checks, log analyses, and regression suite testing across diverse environments to ensure system reliability and data security. These responsibilities not only strengthened my technical expertise in tools like Notepad++, Excel, and various testing environments but also deepened my appreciation for meticulous problem-solving and team collaboration.
+          
+          In addition to my professional experience, I have undertaken academic projects that reflect my technical proficiency and teamwork capabilities. For instance, I contributed to developing a distributed file system with features like secure remote communication and file locking, leveraging Python-Django, MySQL, and Azure DevOps. Navigating challenges such as concurrency errors and integrating diverse ideas within a team showcased my adaptability and effective communication skills.
+          
+          Beyond my technical acumen, I bring a customer-oriented mindset cultivated through part-time roles in service and demonstrator positions. These experiences enhanced my interpersonal skills, patience, and ability to communicate complex information effectively—qualities I believe are essential for success in a dynamic workplace.
+          
+          Your organization’s commitment to driving technological innovation aligns with my career aspiration to grow into a dynamic development role while delivering impactful solutions. Proficient in Java, Python, SQL, and web development technologies, I am confident in my ability to contribute to your team’s goals from day one.
+          
+          I would welcome the opportunity to discuss how my skills and experiences align with your needs. Thank you for considering my application. I look forward to the possibility of getting a good grade and would be delighted to provide further information or references upon request.
+         <br> 
+          Best regards,
+          <br>
+          Moyin Olusona
+          <br>
+
+          Phone: +353 (0)899 65 7978<br>
+          Email: Moyinolusona8@gmail.com<br>
+          LinkedIn: <a href="https://www.linkedin.com/in/olusona-moyin" target="_blank">www.linkedin.com/in/olusona-moyin</a><br>
+          GitHub: <a href="https://github.com/x00185164" target="_blank">github.com/x00185164</a>
+        </p>
+        <button class="btn btn-primary btn-custom" onclick="revealCV()">Continue to CV</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5" id="cvContent" style="display: none;">
+    <header class="cv-header">
+      <img src="css/images/tud intcv.jpg" alt="Header Image" class="header-image">
+      <img src="css/images/me picture.png" alt="Portrait" class="portrait">
+      <div class="name-degree fade-in">
+        <h1>Moyin Olusona</h1>
+        <h2>BSc Computing with Software Development</h2>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/moyin-o" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:moyinolusona@gmail.com.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/olusona-moyin" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </header>
+
+    
+
+    <div class="center-container">
+      <section id="about" class="full-page expanded">
+        <h2 class="section-heading" onclick="toggleSectionContent('about')">Personal Statement</h2>
+        <div class="card section-card section-content" style="display: block;">
+          <div class="card-body">
+            <p>Fueled by experience in crafting diverse Java and SQL programs throughout college and my customer-facing experience in multiple part-time jobs, I'm excited about the prospect of joining your tech company in an entry-level capacity. My aspiration is to embark on a trajectory of growth within your organization, ultimately evolving into a dynamic development role. By harnessing my strengths in collaboration, effective communication, and technical proficiency, I am eager to drive positive change while honing my industry expertise. As a dedicated Technological University Dublin student, backed by practical employment experience and strong interpersonal skills, I am actively in pursuit of a fulfilling work placement opportunity that aligns with my professional ambitions.</p>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="full-page collapsed">
+        <h2 class="section-heading" onclick="toggleSectionContent('education')">Education</h2>
+        <div class="card section-card section-content" style="display: none;">
+          <div class="card-body">
+            <p data-toggle="tooltip" title="2021 – to-date/ Level 8/ Technological University Dublin">Bachelor of Science in Computing with Software Development </p>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#educationModal">More Details</button>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="full-page collapsed">
+        <h2 class="section-heading" onclick="toggleSectionContent('experience')">Experience</h2>
+        <div class="card section-card section-content" style="display: none;">
+          <div class="card-body">
+            
+
+            <div class="accordion" id="experienceAccordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Demonstrator 
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#experienceAccordion">
+                  <div class="card-body">
+                    Company Description: FMI teams deliver campaigns across a multitude of channels for several sectors https://www.fmi.ie/
+                    <br>
+                    <br>
+                    August 2022 – August 2023
+                    <br>
+                    <br>
+                    Main Responsibilities:
+                    Dealing with customers. I would set up my sample stand where a manager told me to and offer samples to customers in passing. Research. I had to read documents of information about the product I was sampling and know of any deals on said product and relay this information to the customers. 
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Floor Worker
+                    </button>
+                  </h2>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#experienceAccordion">
+                  <div class="card-body">
+                    Company Description:  The Brew Bistro is a small diner/café is in Cnoc Dubh, Ballyboughal, co.Dublin. https://www.thebrewbistro.com/?l=en
+                    <br>
+                    <br>
+                    August 2021 – August 2022
+                    <br>
+                    <br>
+                    Main Responsibilities 
+                    Dealing with customers. Dealt directly with the customers, it was my responsibility to greet any customers on arrival, seat them at a table and take their orders and answer any queries they had. Cleaning. I washed and dried the restaurant’s dishes, I swept, dusted, moped, cleaned the tables, and closed the store. I dealt with the restaurant’s Flipdish online ordering system. Working as part of a team. We would share some of these responsibilities and communicate who would be the best suit for said responsibilities.
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Intern at Department of Social Protection
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#experienceAccordion">
+                  <div class="card-body">
+                    Company Description: The Department of Social Protection is a government organization focused on promoting social inclusion and providing income support, employment services, and other citizen advisory programs 
+                    <br>
+                    <br>
+                    https://www.gov.ie/en/organisation/department-of-social-protection/
+                    <br>
+                    <br>
+                    February 2023 – July 2023 
+                    <br>
+                    <br>
+                    Main Responsibilities:
+
+                      Health Checks: Conducted daily health checks on the JobsPlus website, identifying issues and reporting findings to the testing team. Documented results in detailed tables for review.
+                      Log Analysis: Utilized Notepad++ to analyze weekly JobsPlus logs, recording findings in spreadsheets for team use.
+                      Data Preparation: Created test profiles with randomized data for use across multiple testing environments, ensuring robust and diverse system evaluation.
+                      System Testing: Ran regression suites and test cases to verify system functionality and updates, supporting services such as Local Area Employment Service (LAES) and ESCO.
+                      Team Collaboration: Coordinated with the BOMI Testing Team to ensure system reliability, data security, and efficient troubleshooting. Participated in daily stand-ups and weekly team meetings to discuss progress and challenges.
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="full-page collapsed">
+        <h2 class="section-heading" onclick="toggleSectionContent('skills')">Skills</h2>
+        <div class="card section-card section-content" style="display: none;">
+          <div class="card-body">
+            <h3>IT Skills</h3>
+            <div class="skill">
+              <p>Java and Python</p>
+              <div class="progress" data-toggle="tooltip" title="Proficient in Java and Python">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>SQL queries to intermediate level using Oracle 11G</p>
+              <div class="progress" data-toggle="tooltip" title="Intermediate level in SQL queries using Oracle 11G">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Design and create database schemas</p>
+              <div class="progress" data-toggle="tooltip" title="Design and create database schemas">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Website design using Django, JavaScript, CSS and HTML5</p>
+              <div class="progress" data-toggle="tooltip" title="Website design using Django, JavaScript, CSS and HTML5">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Analyse data using Excel, and Python</p>
+              <div class="progress" data-toggle="tooltip" title="Analyse data using Excel, and Python">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>6
+            </div>
+            <div class="skill">
+              <p>Analyse and design systems using UML</p>
+              <div class="progress" data-toggle="tooltip" title="Analyse and design systems using UML">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Windows and Linux Operating Systems in system administration</p>
+              <div class="progress" data-toggle="tooltip" title="Windows and Linux Operating Systems in system administration">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Design build and troubleshoot a network using routers and hubs using related tools</p>
+              <div class="progress" data-toggle="tooltip" title="Design build and troubleshoot a network using routers and hubs using related tools">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Configure a router using the Cisco IOS command set</p>
+              <div class="progress" data-toggle="tooltip" title="Configure a router using the Cisco IOS command set">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Administer an Oracle 11G database server using Enterprise Manager and related SQL commands</p>
+              <div class="progress" data-toggle="tooltip" title="Administer an Oracle 11G database server using Enterprise Manager and related SQL commands">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>PowerShell and Python script writing</p>
+              <div class="progress" data-toggle="tooltip" title="PowerShell and Python script writing">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+            <div class="skill">
+              <p>Azure Experience</p>
+              <div class="progress" data-toggle="tooltip" title="Azure Experience">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </section>
+    <section id="projects" class="full-page collapsed">
+      <h2 class="section-heading" onclick="toggleSectionContent('projects')">Projects</h2>
+      <div class="card section-card section-content" style="display: none;">
+        <div class="card-body">
+          <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              
+
+
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Distributed File System</h5>
+                      <p class="card-text">Description
+                        A restaurant website, it was a team project involving the development of a distributed file system, where multiple users could transparently edit/modify remote files on a central server as if they were local files. Features included account authorization and secure remote communication based on the Kerberos protocol, file locking, server-to-local _le replication/updating, caching, a loyalty reward system, a reservation system, and modification date checking for multiple users.
+                        <br>
+                        Challenges faced:
+                        Concurrency errors
+                        Deciding what type of remote communication to use
+                        Communication among several team members
+                        Team members needing to compromise ideas in order to progress with project.
+                        <br>
+                        Technologies & Tools Used:
+                        Python, Python-Django, MySQL, Visual studio code, HTML, Azure Dev ops, UML, Oracle SQL, Jupyter Notebook-Python 3(ipykernel), Visual Paradigm, GitHub and HTTP
+                        
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">SkillSprout</h5>
+                      <p class="card-text">
+                        Description
+                        A course management system developed as part of a team project. The platform enables users to browse, enroll in, and track progress for online courses. Key features included account authentication, a progress tracking dashboard, lesson and quiz management, user reviews, a discussion forum, and a course completion workflow. The system ensures data consistency and user-friendly navigation through automated progress updates and intuitive design.
+                        <br>
+                        Challenges Faced
+                        Handling concurrency issues during progress updates for multiple users.
+                        Designing flexible models to support course content, progress tracking, and reviews.
+                        Managing communication and coordination across team members with varying expertise.
+                        Integrating feedback from team members to refine the project direction and design.
+                        <br>
+                        Technologies & Tools Used
+                        Python, Django, MySQL, HTML, CSS, JavaScript, Visual Studio Code, GitHub, Azure DevOps, UML, Oracle SQL, Jupyter Notebook (Python 3), Visual Paradigm, and HTTP.</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#projectsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="interests-achievements" class="full-page collapsed">
+        <h2 class="section-heading" onclick="toggleSectionContent('interests-achievements')">Interests and Achievements</h2>
+        <div class="card section-card section-content" style="display: none;">
+          <div class="card-body">
+            <div class="accordion" id="interestsAchievementsAccordion">
+
+
+
+              <div class="card-header" id="headingProfessional">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseProfessional" aria-expanded="false" aria-controls="collapseProfessional">
+                    Professional
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseProfessional" class="collapse show" aria-labelledby="headingProfessional" data-parent="#interestsAchievementsAccordion">
+                <div class="card-body">
+                  
+                  <ul>
+                    <li data-toggle="tooltip" title="Learned the fundamental techniques and tools required to train a deep learning model,
+                    Gained experience with common deep learning data types and model architectures,
+                    Enhanced datasets through data augmentation to improve model accuracy,
+                    Leveraged transfer learning between models to achieve efficient results with less data and computation,
+                    Have confidence to take on your own project with a modern deep learning framework.">Certificate earned in NVDIA Fundamentals of Deep Learning</li>
+                    <li data-toggle="tooltip" title="A two-day tech event for female undergraduates, where I completed challenges with engineers and enhanced and devloped technical skill set, shodowed Workday employees and Managers and partook in workshops .">Completed Workday’s ‘Future Females in Tech’ program.</li>
+                    <li data-toggle="tooltip" title="In partnership with Tallaght University Hospital, AWS in Communities, and Tallaght Hospital, an academic partner of Trinity College Dublin">Won the Best Overall Winner Health Hackathon Award at the TUD Health Transformation Challenge
+                      <br>
+                      <b>
+                      <a href="https://www.tuh.ie/News/TU-Dublin-Students-Present-Innovative-Tech-Based-Solutions-to-Challenges-set-by-TUH.html" target="_blank">https://www.tuh.ie/News/TU-Dublin-Students-Present-Innovative-Tech-Based-Solutions-to-Challenges-set-by-TUH.html</a>
+                      </b>
+
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+              <div class="card">
+                <div class="card-header" id="headingVolunteering">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseVolunteering" aria-expanded="true" aria-controls="collapseVolunteering">
+                      Volunteering
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseVolunteering" class="collapse" aria-labelledby="headingVolunteering" data-parent="#interestsAchievementsAccordion">
+                  <div class="card-body">
+                    
+                    <ul>
+                      <li data-toggle="tooltip" title="A Christian teens camp in Westmeath. I would do background work such as cleaning and then also organize and execute games for the teens. Skills: Patience, organization, time management.">Summer Soul</li>
+                      <li data-toggle="tooltip" title="A primary school age Christian camp that takes place across Ireland. My duties involved setting up and executing games and cleaning. Skills: Demonstrating leadership working as a team.">United Beach Missions</li>
+                      <li data-toggle="tooltip" title="A mathematics volunteer program that our college ran. My duties involved interacting with the students, who were of leaving certificate age and helping them work through any math related issue they had. Certificate Earned. Skills: Problem solving, active listening skills, assisting others to solve problems.">Math volunteer program (MVP)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                
+              <div class="card">
+                <div class="card-header" id="headingResponsibility">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseResponsibility" aria-expanded="false" aria-controls="collapseResponsibility">
+                      Posts of Responsibility
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseResponsibility" class="collapse" aria-labelledby="headingResponsibility" data-parent="#interestsAchievementsAccordion">
+                  <div class="card-body">
+                    
+                    <ul>
+                      <li data-toggle="tooltip" title="Led team to organize  regular meet ups and larger scale events">President of Christian Union Society</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingRecreational">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseRecreational" aria-expanded="false" aria-controls="collapseRecreational">
+                      Recreational
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseRecreational" class="collapse" aria-labelledby="headingRecreational" data-parent="#interestsAchievementsAccordion">
+                  <div class="card-body">
+                    
+                    <ul>
+                      <li data-toggle="tooltip" title="I blog my writing.">Writing</li>
+                      <li data-toggle="tooltip" title="I blog my art.">Painting</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="full-page collapsed">
+        <h2 class="section-heading" onclick="toggleSectionContent('contact')">Contact</h2>
+        <div class="card section-card section-content" style="display: none;">
+          <div class="card-body">
+            <button type="button" class="btn btn-primary btn-large" data-toggle="modal" data-target="#contactModal">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </section>
+      
+     <!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education Modal -->
+<div class="modal fade" id="educationModal" tabindex="-1" role="dialog" aria-labelledby="educationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="educationModalLabel">Education Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Technological University Dublin</h6>
+        <p>Bachelor of Science in Computing with Software Development</p>
+        <b>GPA: 2.42</b>
+        <p>Modules:</p>
+        <ul>
+          <li>First Year: Software Development1 (C), Computer Architecture (C+), Visual Design (B), Business & Information Systems (C), Discrete Maths1 (C) Critical Skills Development (B+),
+            Software Development2 (C), Systems Analysis(B+), Social Media Communications (C+), Statistics (B-), Database Fundamentals (B), Operating Systems Fundamentals (C+)
+          </li>
+          <br>
+          <li>Second Year: Client-Side Web Development (C), Discrete Maths2 (B+), Advanced Database Technologies (C+), Network Fundementals (B-), Software Quality Assurance & Testing (B), Software Development3 (C), Inforation Security (C), Database Administration & Analysis (C+),
+            Management Science (A), Routing & Switching (A), Second Year Project (B), Software Development4 (C), Information Security (C)
+          </li>
+          <br>
+          <li>Third Year: Data Structures & Algorithms (B), Big Data Technologies (D), Cloud Services & Distributed Computing (C), innovation & Entrepreneurship (B+),
+            Operating Systems (C), Server-Side Web Development (C+)
+            <br>
+            INTERNSHIP: Department of Social Protection
+          </li>
+          <br>
+          <li>Fourth Year: Information Management (TBC), DevOps -Continuous Integration (TBC), Enterprise App Development (TBC), Interactive Media Design (TBC), Enterprise Performance Architecture (TBC)
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+  </div> 
+</div> 
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top">Top</button>
+<label class="switch">
+
+<input type="checkbox" id="darkModeToggle">
+  <span class="slider round"></span>
+</label>
+
+
+<script>
+    
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const lastSection = localStorage.getItem('lastSection');
+  const isOnCoverPage = localStorage.getItem('isOnCoverPage') === 'true';
+  const isDarkMode = localStorage.getItem('isDarkMode') === 'true';
+
+  if (isOnCoverPage) {
+    showCoverPage();
+  } else if (lastSection) {
+    revealCV();
+    toggleSectionContent(lastSection);
+  } else {
+    showCoverPage();
+  }
+
+
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+    document.getElementById('darkModeToggle').checked = true;
+  }
+
+ 
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollTopBtn.style.display = 'block';
+    } else {
+      scrollTopBtn.style.display = 'none';
+    }
+  }
+
+  scrollTopBtn.addEventListener('click', function() {
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
+  });
+
+  
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('isDarkMode', document.body.classList.contains('dark-mode'));
+  });
+
+  
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    
+    alert('Your email has been sent! Thank you for getting in contact. I will get back to you as soon as possible.');
+    
+    $('#contactModal').modal('hide');
+    
+    document.getElementById('contactForm').reset();
+  });
+});
+
+function revealCV() {
+  document.getElementById('coverPage').style.display = 'none';
+  document.getElementById('cvContent').style.display = 'block';
+  document.querySelector('#about .section-content').style.display = 'block';
+  localStorage.setItem('isOnCoverPage', 'false');
+}
+
+function showCoverPage() {
+  document.getElementById('coverPage').style.display = 'flex';
+  document.getElementById('cvContent').style.display = 'none';
+  localStorage.setItem('isOnCoverPage', 'true');
+}
+
+function toggleSectionContent(sectionId) {
+  const section = document.getElementById(sectionId);
+  const content = section.querySelector('.section-content');
+  if (content.style.display === 'none' || content.style.display === '') {
+    content.style.display = 'block';
+    section.classList.remove('collapsed');
+    section.classList.add('expanded');
+  } else {
+    content.style.display = 'none';
+    section.classList.remove('expanded');
+    section.classList.add('collapsed');
+  }
+  localStorage.setItem('lastSection', sectionId);
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+</body>
+</html>
